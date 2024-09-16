@@ -1,6 +1,8 @@
 const { PDFDocument } = require('pdf-lib');
 const fs = require('fs');
 
+module.exports = { mergePDFs };
+
 async function mergePDFs(pdfPaths, outputPath) {
   const mergedPDF = await PDFDocument.create();
 

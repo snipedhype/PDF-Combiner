@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF Combiner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 10px;
+      border: 2px solid #333;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .instruction {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #333;
+      text-align: left;
+      white-space: nowrap; /* makes the text all one line */
+    }
+
+    button {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .bottom-right-container {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .credits {
+      color: white;
+      font-size: 12px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2px 4px;
+      border-radius: 3px;
+      margin-bottom: 5px;
+    }
+
+    .corner-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .container {
+      max-width: 400px; 
+    }
+  </style>
+</head>
+<body>
+
+  <h1>PDF Combiner</h1>
+  <div class="container">
+    <div class="instruction">
+      Tip: select the PDF files in the order you want them to be combined.
+    </div>
+    <button id="selectFilesBtn">Select PDF Files</button>
+    <button id="mergeBtn">Merge PDFs</button>
+    <p id="outputMessage"></p>
+  </div>
+
+  <!-- credits for developer -->
+  <div class="bottom-right-container">
+    <span class="credits">Developed by snipedhype</span>
+    <img src="devlogo.png" alt="Logo" class="corner-image">
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

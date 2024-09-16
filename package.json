@@ -1,0 +1,35 @@
+{
+  "name": "pdf-combiner",
+  "version": "1.0.0",
+  "description": "Open sourced PDF combiner written in NodeJS",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^32.1.0",
+    "electron-builder": "^25.0.5"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  },
+  "build": {
+    "productName": "PDF Combiner",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "renderer.js",
+      "script.js",
+      "index.html",
+      "devlogo.png",
+      "node_modules"
+    ]
+  }
+}
